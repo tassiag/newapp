@@ -10,7 +10,7 @@ function App() {
       <div className="container">
     
       <Search/>
-        <Weather/>
+        <Weather defaultCity="Rio de Janeiro"/>
       
 
       </div>
