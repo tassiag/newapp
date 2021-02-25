@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import './App.css';
+import Date from "./Date";
 
 export default function Weather(props) {
     const [ready, setReady] = useState(false);
@@ -12,6 +13,7 @@ export default function Weather(props) {
             temperature: response.data.main.temp,
             wind: Math.round(response.data.wind.speed),
             city: response.data.name,
+            date: new Date(response.data.dt * 1000),
             description: response.data.weather[0].description,
             humidity: Math.round(response.data.main.humidity),
             maxTemp: Math.round(response.data.main.temp_max),
@@ -31,7 +33,7 @@ return (
         <div className="header">
             <h1 className="city">{weatherData.city}</h1>
         <ul>
-                <li className="date">monday, 10:30</li>
+                <li className="date"><Date date={weatherData.date}/></li>
                 <li className="description">{weatherData.description}</li>
         </ul>
         </div>
