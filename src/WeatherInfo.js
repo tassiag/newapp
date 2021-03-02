@@ -20,7 +20,7 @@ export default function WeatherInfo(props) {
             </div>
 
             <div className="col-md-3 weather-icon text-center">
-                <img alt="" className="main-icon" src="https://weatherappshecodes.netlify.app/imgs/02d.png" />
+                <img alt="" className="main-icon" src={props.data.iconUrl} />
                 </div>
 
             <div className="col-md-3 weather-info  text-center">
