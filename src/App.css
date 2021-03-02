@@ -34,7 +34,8 @@ strong {
 }
 
 a {
-  color: #fff;
+  color: #000;
+  text-decoration: none;
 }
 
 a:hover {
@@ -144,7 +145,7 @@ footer a:hover {
 }
 
 .units {
-  font-size: 13px;
+  font-size: 12px;
   position: relative;
   top: -42px;
 }
@@ -167,9 +168,7 @@ footer a:hover {
   transform: translateY(-50%)
 }
 
-.weather-icon {
-  margin: 50px;
-}
+
 
 /* forecast container */
 
