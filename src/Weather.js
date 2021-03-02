@@ -51,6 +51,7 @@ if (weatherData.ready) {
 
 
 return (
+    <div>
     <div className="container">
         <div className="search">
             <form className="search-form" id="search-form" onSubmit={handleSubmit}>
@@ -61,7 +62,15 @@ return (
             </form>
         </div>
         <WeatherInfo data={weatherData} />
+        
         </div>
+        <div className="footer">
+            <footer>
+                <p><a href="https://github.com/tassiag/newapp" target="_blank">Open-source</a> | Coded by <a href="https://www.linkedin.com/in/tassiagomes/" target="_blank">Tássia Gomes</a></p>
+            </footer>
+        </div>
+    </div>
+         
 
         
 
