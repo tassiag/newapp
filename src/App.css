@@ -167,8 +167,8 @@ footer a:hover {
   transform: translateY(-50%)
 }
 
-.main-icon {
-  width: 100px;
+.weather-icon {
+  margin: 50px;
 }
 
 /* forecast container */
