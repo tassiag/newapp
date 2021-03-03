@@ -24,9 +24,9 @@ export default function WeatherTemperature(props) {
     if (unit === "celsius") {
         return (
             <div className="WeatherTemperature">
-                <div id="show-degrees" className="col-md-3 text-center">
+                <div id="show-degrees" className="col-md-3 justify-content-md-center">
                     <span className="degrees">{Math.round(props.celsius)}</span>
-                    <span className="units">ºC | <a href="/" onClick={showFahrenheit}>ºF</a> </span> 
+                    <span className="units">ºC|<a href="/" onClick={showFahrenheit}>ºF</a> </span> 
                 </div>
 
             </div>);

@@ -16,6 +16,12 @@ body {
   
 }
 
+.forecast-tile {
+  font-size: 14px;
+  color:#bcd4c6;
+
+}
+
 h3 {
   font-size: 14px;
   color:#bcd4c6;
@@ -66,7 +72,9 @@ li::first-letter {
 /* search input */
 
 .search {
-  padding: 30px 20px 20px;
+  padding: 30px 0;
+  margin: 40px 20px;
+  
 }
 
 #city-input {
@@ -117,7 +125,7 @@ footer a:hover {
 
 /* header section */
 
-#header {
+.header {
   line-height: 22px;
   margin: 40px 20px;
 }
@@ -172,19 +180,23 @@ footer a:hover {
 
 /* forecast container */
 
-#forecast {
+.WeatherForecast {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.WeatherForecast canvas {
+  display: block;
+  text-align: center;
+}
+
+.forecast {
 
   margin-top: 40px;
   padding: 20px;
   padding-bottom: 30px;
-  text-align: center;
+
 }
 
-#forecast p {
-  font-size: 14px;
-}
 
-.icon-forecast {
-  width: 40px;
-  margin-bottom: 10px;
-}
+

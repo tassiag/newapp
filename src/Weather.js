@@ -4,6 +4,7 @@ import './App.css';
 
 
 import WeatherInfo from './WeatherInfo';
+import WeatherForecast from './WeatherForecast';
 
 
 export default function Weather(props) {
@@ -62,6 +63,7 @@ return (
             </form>
         </div>
         <WeatherInfo data={weatherData} />
+        <WeatherForecast city={weatherData.city}/>
         
         </div>
         <div className="footer">
