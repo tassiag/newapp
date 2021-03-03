@@ -16,17 +16,6 @@ body {
   
 }
 
-.forecast-tile {
-  font-size: 14px;
-  color:#bcd4c6;
-
-}
-
-h3 {
-  font-size: 14px;
-  color:#bcd4c6;
-
-}
 
 ul {
   list-style-type: none;
@@ -51,7 +40,6 @@ a:hover {
   transition: all 0.3s;
  
 }
-
 
 li::first-letter {
   text-transform: capitalize;
@@ -143,6 +131,9 @@ footer a:hover {
   
 }
 
+/* icon weather display */
+
+
 /* degrees display - left container */
 
 .degrees {
@@ -177,26 +168,19 @@ footer a:hover {
 }
 
 
-
 /* forecast container */
 
 .WeatherForecast {
   text-align: center;
-  margin: 20px 0;
-}
-
-.WeatherForecast canvas {
-  display: block;
-  text-align: center;
-}
-
-.forecast {
-
-  margin-top: 40px;
+  margin: 40px 0;
   padding: 20px;
   padding-bottom: 30px;
 
 }
 
-
+.WeatherForecast canvas {
+  display: block;
+  margin: 0 auto;
+  width: 42px;
+}
 

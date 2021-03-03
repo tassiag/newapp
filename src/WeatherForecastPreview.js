@@ -18,7 +18,7 @@ function temperature() {
 
 return (
     <div className="WeatherForecastPreview forecast  col">
-        {hours()}
+        <strong>{hours()}</strong>
         <WeatherIcon code={props.data.weather[0].icon} />
         {temperature()}
     </div>

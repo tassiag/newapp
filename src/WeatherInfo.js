@@ -17,13 +17,13 @@ export default function WeatherInfo(props) {
 
         <div className="row justify-content-md-center" id="weather-container">
 
-        <WeatherTemperature celsius={props.data.temperature}/>
+        <div id="show-degrees" class="col-md-3 text-center">
+            <WeatherTemperature celsius={props.data.temperature}/>
+            </div>
 
-            
-
-            <div className="col-md-3 weather-icon text-center">
-                <WeatherIcon code={props.data.icon} alt={props.data.description}/>
-                </div>
+            <div className="col-md-3 text-center teste">
+            <WeatherIcon code={props.data.icon} alt={props.data.description}/>
+            </div>
 
             <div className="col-md-3 weather-info  text-center">
                 <ul className="weather-list ">
@@ -35,6 +35,7 @@ export default function WeatherInfo(props) {
 
             </div>
         </div>
+        
 
     
     
